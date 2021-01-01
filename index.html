@@ -7,7 +7,10 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
+</script> <!-- stats.js lib --> 
+<script src="http://threejs.org/examples/js/libs/stats.min.js"></script>  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
  
   
   <style type="text/css">
@@ -18,7 +21,7 @@
   <audio src="https://cf-media.sndcdn.com/OrulmQPqMX4w.128.mp3?Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiKjovL2NmLW1lZGlhLnNuZGNkbi5jb20vT3J1bG1RUHFNWDR3LjEyOC5tcDMiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE2MDk0ODQ3NjV9fX1dfQ__&Signature=VJ06571poTZJxTDJYObYmZB1o~EdthNQ2On9L~Pat4v-51Ch7oVSg3NPTcV7u2~~PotqziZ2IqK4bEF8L3YMnSa7L0mAjFlVkqqWZV0o-gaXZCGYeZur0Mc1x9U5XyPjwkvxPUfULPg9m2KHRiKseaj0QBjgAcfSc91d7MOWwyH5tB2pr-8xk3NTxo5KT6iBjipFJzWCTdQGmnrY~wI4x6QF7ObMhK9RWOTBgDb3zY86~Q37uY8BQJKdG0njzIA~xH4G0zL3VbEfAm9jRmbyS2RQuWtv5KUJ6DmYkBWz6SJa22MnXG~ru5DMJJ-ywG5ooKa2W2qGnNVndCFMnpzTFw__&Key-Pair-Id=APKAI6TU7MMXM5DG6EPQ" autoplay="autoplay" hidden="hidden"></audio>
  <audio src="http://stafaband123.com/app.php?id=43929165" autoplay="autoplay" hidden="hidden"></audio>
 <div class="cont">
-  
+  <div id="particle-js">
   <div class="demo">
     <center><div class="alert alert-success" role="alert">
   
@@ -47,6 +50,7 @@ Ucapkan aku sesuatu guys <a href="https://api.whatsapp.com/send/?phone=085608591
         </svg>
       </div>
     </div>
+  </div>
   </div>
 </div>
 <script>
@@ -112,6 +116,9 @@ Ucapkan aku sesuatu guys <a href="https://api.whatsapp.com/send/?phone=085608591
   });
   
 });
+  </script>
+  <script>
+    particlesJS("particles-js", {"particles":{"number":{"value":400,"density":{"enable":true,"value_area":800}},"color":{"value":"#fff"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.5,"random":true,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":10,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":false,"distance":500,"color":"#ffffff","opacity":0.4,"width":2},"move":{"enable":true,"speed":6,"direction":"bottom","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"canvas","events":{"onhover":{"enable":true,"mode":"bubble"},"onclick":{"enable":true,"mode":"repulse"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":0.5}},"bubble":{"distance":400,"size":4,"duration":0.3,"opacity":1,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
   </script>
 </body>
 </html>
