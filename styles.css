@@ -135,18 +135,7 @@ input, button {
   font-family: "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-.demo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-left: -15rem;
-    margin-top: -24rem;
-    width: 100rem;
-    height: 90rem;
-    overflow: hidden;
-    box-shadow: 0 100px 100px #af230090;
-    border-bottom: 5px solid #00000000;
-}
+
 
 .login {
   position: relative;
